@@ -22,39 +22,59 @@
             <article>
                 <template id="card1">
                     <div class="p-card">
-                        <h2>Important Notes</h2>
+                        <h2>Do you start to work on your personal summative project?</h2>
                         <div class="p-card__content">
-                            <p>Keep the Pypercard a <code>&lt;template id="card#"&gt;</code> or it breaks.</p>
-                            <p>For example, try changing the <code>&lt;template id="card#"&gt;</code> to <code>&lt;div id="card#"&gt;</code>, and it will trigger a <code>RuntimeError: Unable to find template for card 'card1'.</code></p>
-                            <p>Just be sure to change it back.</p>
+                            <button id="Yes" autofocus>Yes</button>
+                            <button id="No" autofocus>No</button>
                         </div>
                     </div>
                 </template>
                 <template id="card2">
                     <div class="p-card">
-                        <h2>The second card</h2>
+                        <h2>Yes</h2>
                         <div class="p-card__content">
-                            <p>This card will automatically transition to the third card after 20
-                            seconds, by calling a user defined function with some simple counting
-                            logic in it. The user defined function simply returns a string containing
-                            the name of the next card to render.</p>
-                            <p>But if you click the button, you'll transition back to the
-                            first card, and the automatic transition won't happen.</p>
-                            <button id="reset" autofocus>Reset</button>
+                            <p>You choose to work on your project. Do you</p>
+                            <button id="Work_alone" autofocus>Work_alone</button>
+                            <button id="Cheat" autofocus>Cheat</button>
                         </div>
                     </div>
                 </template>
                 <template id="card3">
                     <div class="p-card">
-                        <h2>The final card</h2>
+                        <h2>No</h2>
                         <div class="p-card__content">
-                            <p>That's it! This card has been displayed {counter} time[s].</p>
-                            <p>It will automatically transition back to the first after 5
-                            seconds.</p>
+                            <p>You don’t complete your project and get an I. Do you</p>
+                            <button id="Attempt_project" autofocus>Attempt_project</button>
+                            <button id="Never_do_project" autofocus>Never_do_project</button>
                         </div>
                     </div>
                 </template>
-            </article>
+                <template id="card4">
+                    <div class="p-card">
+                        <h2>Work_alone</h2>
+                        <div class="p-card__content">
+                            <p>After an hour of long, hard work, you complete your project and get an A</p>
+                            <button id ="Return" autofocus>Return</button>
+                        </div>
+                    </div>
+                </template>
+                <template id="card5">
+                    <div class="p-card">
+                        <h2>Cheat</h2>
+                        <div class="p-card__content">
+                            <p>You chose to look at your friend's project and copied it. Both you and your friend get an F</p>
+                            <button id ="Return" autofocus>Return</button>
+                        </div>
+                    </div>
+                </template>
+                <template id="card6">
+                    <div class="p-card">
+                        <h2>You never work on your project and get an F in the class</h2>
+                        <div class="p-card__content">
+                            <button id ="Return" autofocus>Return</button>
+                        </div>
+                    </div>
+                </template>
         </section>
     </main>
 </body>
